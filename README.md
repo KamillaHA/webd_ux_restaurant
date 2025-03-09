@@ -1,6 +1,6 @@
 # KEA Restaurant
 ## Mandatory exercise - KEA Webdevelopment
 
-**Made by:**
+## Made by:
 Kamilla Huhnke
 
