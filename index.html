@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/menu.css">
-
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
     <title>Home | KEA Restaurant</title>
 </head>
 <body>
@@ -15,14 +15,15 @@
 <!-- Navigation - Home page -->
     <nav>
         <ul>
-            <li><a href="index.html" title="Home" class="selected">Home</a></li>
-            <li><a href="menu.html" title="Menu">Menu</a></li>
-            <li><a href="contact.html" title="Contact">Contact</a></li>
+            <li><a href="#" title="Home" class="selected" data-target="home_page">Home</a></li>
+            <li><a href="#" title="Menu" data-target="menu_page">Menu</a></li>
+            <li><a href="#" title="Contact" data-target="contact_page">Contact</a></li>
         </ul>
     </nav>
-
     <main>
 
+
+    <section class="page" id="home_page">
 <!-- Section 1 - Home page -->
         <section>
             <img id="home" src="img/kea_restaurant.jpg" alt="KEA Restaurant">
@@ -56,6 +57,125 @@
                 </p>
             </blockquote>
         </aside>
+    </section>
+
+
+
+
+    <section class="page hidden" id="menu_page">
+<!-- Article 1 - Turing Salad -->
+        <article class="dish">
+            <img class="menu" src="img/salad.jpg" alt="Turing Salad">
+            <header>
+                <h2>Turing Salad</h2>
+            </header>
+            <p class="menuItem">
+                Sun-dried tomatos and feta cheese on top of a thin layer of lettuce. Choose between our balsamic,
+                mustard or barbecue dressing.
+            </p>
+            <p class="price">
+                75 kr,-
+            </p>
+        </article>
+
+<!-- Article 2 - Pizza Berners-Lee -->
+        <article class="dish">
+            <img class="menu" src="img/pizza.jpg" alt="Pizza Berners-Lee">
+            <header>
+                <h2>Pizza Berners-Lee</h2>
+            </header>
+            <p class="menuItem">
+                Tomato, mozzarella, pepperoni and rucula. Choose between our thin or thick bread base.
+            </p>
+            <p class="price">
+                80 kr,-
+            </p>
+        </article>
+
+<!-- Article 3 - Codd Burger -->
+        <article class="dish">
+            <img class="menu" src="img/burger.jpg" alt="Codd Burger">
+            <header>
+                <h2>Codd Burger</h2>
+            </header>
+            <p class="menuItem">
+                High quality meat, lettuce, tomato, onion, bacon, cheese, jalape&ntilde;os and a lot of love.
+                Which sauce do you prefer: BBQ, Dijon or mayonaisse? It comes with French fries and coleslaw salad.
+            </p>
+            <p class="price">
+                115 kr,-
+            </p>
+        </article>
+
+<!-- Article 4 - Cerf Cream -->
+        <article class="dish">
+            <img class="menu" src="img/icecream.jpg" alt="Cerf Cream">
+            <header>
+                <h2>Cerf Cream</h2>
+            </header>
+            <p class="menuItem">
+                Delightful strawberry icecream topped with actual strawberries. In cone or vase. Multiple toppings available.
+            </p>
+            <p class="price">
+                65 kr,-
+            </p>
+        </article>
+    </section>
+
+    <section class="page hidden" id="contact_page">
+<!-- Section 1 - Information -->
+    <section>
+        <img id="contact" src="img/map.jpg" alt="Map">
+        <address>
+            <p>
+                Guldbergsgade 29N
+            </p><br>
+            <p>
+                2200 Copenhagen
+            </p>
+            <p>
+                Phone no.: <a href="tel:20825370" title="Phonenumber to KEA Restaurant">20 82 53 70</a>
+            </p>
+            <p>
+                E-mail: <a href="mailto:info@reataurantkea.dk" title="Email to KEA Restaurant">info@restaurantkea.dk</a>
+            </p>
+        </address>
+    </section>
+
+<!-- Section 2 - Form -->
+    <form action="mailto:info@restaurantkea.dk" method="POST">
+        <fieldset>
+            <legend>Contact form</legend>
+            <div>
+                <label for="txtFullName">Full name</label>
+                <input type="text" id="txtFullName"  name="full_name" required pattern="([A-Za-z-]+ )+[A-Za-z-]+">
+            </div>
+            <div>
+                <label for="txtPhoneNo">Phone no.</label>
+                <input type="tel" id="txtPhoneNo" name="phone_no" required pattern="[0-9]{8}">
+            </div>
+            <div>
+                <label for="txtEmail">E-mail</label>
+                <input type="email" id="txtEmail" name="email" required>
+            </div>                    
+            <div>
+                <label for="txtPersons">Persons</label>
+                <input type="number" id="txtPersons" name="persons" value="2" required min="1" max="20">
+            </div>                    
+            <div>
+                <label for="txtDateTime">Date and time</label>
+                <input type="datetime-local" id="txtDateTime" name="date_and_time" required>
+            </div>                                        
+            <div>
+                <label for="txtInformation">Further information</label><br>
+                <textarea id="txtInformation" name="further_information"></textarea>
+            </div>                            
+            <div>
+                <button type="submit">Send</button>
+            </div>  
+        </fieldset>
+    </form>
+    </section>
     </main>
 
     <!-- Footer -->

@@ -1,4 +1,7 @@
 @import 'variables.css';
+@import 'contact.css';
+@import 'home.css';
+@import 'menu.css';
 
 /* Default */
 * {
@@ -19,7 +22,7 @@ body {
         text-indent: 1rem;
         line-height: 4rem;
     }
-    
+
 /* Index-list */
     ul {
         padding: 0.5rem;
@@ -31,7 +34,7 @@ body {
             color: var(--colorList);
         }
     }
-    
+
 /* Links */
     a {
         text-decoration: none;
@@ -91,6 +94,10 @@ body {
         @media only screen and (min-width: 1024px) {
             width: 80vw;
         }
+    }
+/* Hiding the other pages */
+    .hidden {
+        display: none;
     }
 
 /* Footer */
