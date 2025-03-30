@@ -4,24 +4,23 @@
 address {
     font-style: normal;
     > p {
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
         > span {
             display: block;
         }
+        a {
+            color: var(---colorContrast);
+        }
     }
 }
+
 
 /* Images */
 img#contact {
     width: 100%;
     max-height: 457px;
-    object-fit: cover;
-    border: thin solid var(--colorMain);
-    padding: 0.5rem;
-    margin-bottom: 0.5rem;
-    box-sizing: border-box;
     @media only screen and (min-width: 800px) {
-        max-height: 320px;
+        max-height: 60%;
     }
     @media only screen and (min-width: 1024px) {
         float: right; 
@@ -33,19 +32,22 @@ img#contact {
 
 /* Form */
 form {
+    margin-top: 2rem;
     fieldset {
         padding: 0.5rem;
-        border: thin solid var(--colorMain);
+        border: thin solid var(---colorBgMain);
         border-radius: 0.5rem;
         legend {
             padding: 0 0.25rem;
-            font-size: 0.9rem;
+            font-size: 1rem;
+            color: var(---colorContrast);
         }
     }
     
     label {
         display: inline-block;
         width: 100%;
+        color: var(---colorContrast);
         @media only screen and (min-width: 1370px) {
             width: 7.5rem;        
             &[for=txtInformation] {
@@ -56,7 +58,7 @@ form {
     
     input {
         width: auto;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.8rem;
         &[type="text"], &[type="email"], &[type="tel"] {
             width: 100%;
             @media only screen and (min-width: 1370px) {
@@ -80,9 +82,11 @@ form {
         display: block;
         width: auto;
         margin: 0.5rem 0 0 1rem;
-        padding: 0.25rem 0.5rem;
-        border: thin solid var(--colorMain);
+        padding: 0.4rem 1rem;
+        background-color: var(---colorContrast);
+        color: var(---textColor);
         border-radius: 0.5rem;
+        border: none;
         font-size: 1.2rem;
     }
 }

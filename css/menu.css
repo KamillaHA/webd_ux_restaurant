@@ -1,12 +1,13 @@
 /* Menu */
 
+
 /* Articles */
 article.dish {
     margin-bottom: 0.5rem;
     padding: 1rem;
     border-radius: 1rem;
     overflow: auto;
-    background-color: var(--colorBgArticle);
+    background-color: var(---colorBackground);
     vertical-align: top;
     > h2 {
         font-size: 1.2rem;
@@ -24,12 +25,8 @@ p {
         display: inline-block;
         margin-top: 0.5rem;
         padding: 0.25rem 0.5rem;
-        border: thick solid var(--colorBgNav);
-        border-radius: 0.5rem;
-        color: var(--colorPrice);
-        background-color: var(--colorList);
+        color: var(---colorContrast);
         font-weight: bold;
-        text-align: right;
     }
 }
 

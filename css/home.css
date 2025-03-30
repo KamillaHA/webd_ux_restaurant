@@ -3,8 +3,10 @@
 /* Aside quote */
 blockquote {
     padding: 0.8rem;
+    margin-top: 10rem;
     clear: both;
-    background: var(--colorBgQuote);
+    background: var(---colorContrast);
+    color: var(---textColor);
     border-radius: 0.5rem;
     @media only screen and (min-width: 720px) {
         margin: 0.5rem 0 0 1rem;
@@ -19,7 +21,8 @@ blockquote {
 @media only screen and (min-width: 720px) {
     img#home {
         float: right; 
-        margin: 0 0 0.5rem 0.5rem;    
-        width: auto;
+        margin: 0 0 2rem 0.5rem;    
+        width: 60%;
+        height: 100%;
     }
 }

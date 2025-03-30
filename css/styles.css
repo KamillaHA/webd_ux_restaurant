@@ -12,58 +12,42 @@
 
 /* Body */
 body {
-    font-family: var(--fontMain);
+    font-family: var(---fontMain);
 
     header {
         padding: 0 1rem;
-        color: var(--colorHeader);
-        background-color: var(--colorBgHeader); 
-        font-family: var(--fontTitle);
+        color: var(---textColor);
+        background-color: var(---colorBgMain); 
+        font-family: var(---fontTitle);
         text-indent: 1rem;
         line-height: 4rem;
-    }
-
-/* Index-list */
-    ul {
-        padding: 0.5rem;
-        li {    
-            list-style-type: none;
-            line-height: 1.6rem;
-            font-family: var(--fontList);
-            font-weight: bold;
-            color: var(--colorList);
-        }
     }
 
 /* Links */
     a {
         text-decoration: none;
-        color: var(--colorBgNav);
+        color: var(---textColor);
         font-weight: bold;
         &:hover {
-            font-size: 1.1rem;
+            font-size: 1.05rem;
         }
     }
 
 /* Navigation */
     nav {
         padding: 0 1rem;
-        color: var(--colorHeader);
-        background-color: var(--colorBgNav);
+        background-color: var(---colorBgSecondary);
         line-height: 2rem;
         a {
-            color: var(--colorHeader);
+            color: var(---textColor);
             &.selected {
-                color: var(--colorSelected);
+                color: var(---colorContrast);
                 font-size: 1.2em;
             }
         }
         li {
             display: block;
             text-align: center;
-            border-bottom: thin solid var(--colorHeader);
-            color: var(--colorHeader);
-            font-family: var(--fontNav);
             @media only screen and (min-width: 480px) {
                 display: inline;
                 padding-right: 1rem;
@@ -73,10 +57,23 @@ body {
                 border-bottom: none;
             }
         }
-    }        
+    }  
+    
+/* Index-list */
+    ul {
+        padding: 0.5rem;
+        li {    
+            list-style-type: none;
+            line-height: 1.6rem;
+            font-family: var(---fontMain);
+            font-weight: bold;
+            color: var(---colorBgMain);
+        }
+    }
 
 /* Main sizing */
     > main {
+        margin-top: 2rem;
         padding: 0.5rem 1rem 1rem;
         position: relative;
         top: 0;
@@ -106,8 +103,8 @@ body {
         bottom: 0;
         width: 100%;
         padding: 0.5rem 0;
-        color: var(--colorHeader);
-        background-color: var(--colorBgNav);
+        color: var(---textColor);
+        background-color: var(---colorBgMain);
         text-align: center;
         font-size: 0.8rem;    
         @media only screen and (min-width: 480px) {
