@@ -14,22 +14,6 @@ address {
     }
 }
 
-
-/* Images */
-img#contact {
-    width: 100%;
-    max-height: 457px;
-    @media only screen and (min-width: 800px) {
-        max-height: 60%;
-    }
-    @media only screen and (min-width: 1024px) {
-        float: right; 
-        max-height: auto;
-        margin-left: 1rem;
-        width: auto;
-    }
-}
-
 /* Form */
 form {
     margin-top: 2rem;
@@ -48,22 +32,13 @@ form {
         display: inline-block;
         width: 100%;
         color: var(---colorContrast);
-        @media only screen and (min-width: 1370px) {
-            width: 7.5rem;        
-            &[for=txtInformation] {
-                width: 100%;
-            }
-        }
     }
     
     input {
         width: auto;
-        margin-bottom: 0.8rem;
+        margin-bottom: 0.2rem;
         &[type="text"], &[type="email"], &[type="tel"] {
             width: 100%;
-            @media only screen and (min-width: 1370px) {
-                width: calc(100% - 8.1rem);
-            }
         }
         &[type="number"] {
             text-align: right;
@@ -78,15 +53,28 @@ form {
         height: 5rem;
     }
     
-    button[type="submit"] {
+    button {
         display: block;
         width: auto;
         margin: 0.5rem 0 0 1rem;
-        padding: 0.4rem 1rem;
+        padding: 0.4rem 1.4rem;
         background-color: var(---colorContrast);
         color: var(---textColor);
         border-radius: 0.5rem;
         border: none;
         font-size: 1.2rem;
+    }
+}
+
+/* Images */
+img#contact {
+    width: 100%;
+    max-height: 457px;
+
+    @media only screen and (min-width: 1024px) {
+        float: right; 
+        max-height: auto;
+        margin-left: 1rem;
+        width: auto;
     }
 }

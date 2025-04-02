@@ -1,62 +1,46 @@
 /* Menu */
 
+/* Headers */
+article > header {
+    border-radius: 0.5rem;
+    text-align: center;  
+    margin-top: 1rem;  
+    @media (min-width: 480px) {
+        text-align: left;
+        width: calc(100% - 320px - 1rem);
+        margin-top: 0;
+    }
+}
 
 /* Articles */
 article.dish {
-    margin-bottom: 0.5rem;
-    padding: 1rem;
+    margin-bottom: 1rem;
+    padding: 1.2rem;
     border-radius: 1rem;
     overflow: auto;
     background-color: var(---colorBackground);
-    vertical-align: top;
-    > h2 {
-        font-size: 1.2rem;
-    }
 }
 
 /* Text */
 p {
     &.menuItem {
-        margin-top: 0.5rem;
+        margin-top: 0.6rem;
     }
     &.price {
+        font-weight: bold;
         position: relative;
         right: 0;
         display: inline-block;
-        margin-top: 0.5rem;
-        padding: 0.25rem 0.5rem;
+        margin-top: 0.6rem;
         color: var(---colorContrast);
-        font-weight: bold;
-    }
-}
-
-/* Headers */
-article > header {
-    line-height: 2rem;
-    border-radius: 0.5rem;
-    text-indent: 0;
-    text-align: center;    
-    @media only screen and (min-width: 600px) {
-        text-align: left;
-        width: calc(100% - 320px - 3rem);
     }
 }
 
 /* Images */
 img.menu {
     width: 100%;
-    margin-bottom: 0.5rem;
-    @media only screen and (min-width: 600px) {
+    @media (min-width: 480px) {
         float: right;
-        margin: 0 0 0 0.5rem;
         width: auto;
-    }
-}
-
-/* Screen size */
-@media only screen and (min-width: 1510px) {
-    article.dish {
-        display: inline-block;
-        width: 45%;
     }
 }

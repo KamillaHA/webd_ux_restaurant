@@ -13,33 +13,36 @@
 /* Body */
 body {
     font-family: var(---fontMain);
-
     header {
-        padding: 0 1rem;
+        padding: 1rem;
         color: var(---textColor);
         background-color: var(---colorBgMain); 
         font-family: var(---fontTitle);
-        text-indent: 1rem;
-        line-height: 4rem;
     }
 
-/* Links */
-    a {
-        text-decoration: none;
-        color: var(---textColor);
-        font-weight: bold;
-        &:hover {
-            font-size: 1.05rem;
+/* Index-list */
+        #points {
+            margin-top: 0.6rem;
+            li {    
+                list-style-type: none;
+                line-height: 1.6rem;
+                font-family: var(---fontMain);
+                font-weight: bold;
+                color: var(---colorBgMain);
+            }
         }
-    }
 
 /* Navigation */
     nav {
-        padding: 0 1rem;
+        padding: 0.5rem 1rem;
         background-color: var(---colorBgSecondary);
-        line-height: 2rem;
         a {
+            text-decoration: none;
             color: var(---textColor);
+            font-weight: bold;
+            &:hover {
+                font-size: 1.05rem;
+            }
             &.selected {
                 color: var(---colorContrast);
                 font-size: 1.2em;
@@ -48,53 +51,35 @@ body {
         li {
             display: block;
             text-align: center;
-            @media only screen and (min-width: 480px) {
+            @media (min-width: 480px) {
                 display: inline;
                 padding-right: 1rem;
-                border-bottom: none;
-            }
-            &:nth-of-type(3) {
-                border-bottom: none;
             }
         }
     }  
     
-/* Index-list */
-    ul {
-        padding: 0.5rem;
-        li {    
-            list-style-type: none;
-            line-height: 1.6rem;
-            font-family: var(---fontMain);
-            font-weight: bold;
-            color: var(---colorBgMain);
-        }
-    }
 
 /* Main sizing */
     > main {
-        margin-top: 2rem;
-        padding: 0.5rem 1rem 1rem;
+        margin-top: 1rem;
+        padding: 0.5rem 1rem;
         position: relative;
         top: 0;
-        @media only screen and (min-width: 480px) {
+        @media (min-width: 480px) {
             padding-bottom: 3rem;
+            width: 80vw;
         }
-        @media only screen and (min-width: 800px) {
+        @media (min-width: 800px) {
             width: 95vw;
             margin-left: auto;
             margin-right: auto;
         }
-        @media only screen and (min-width: 900px) {
+        @media (min-width: 900px) {
             width: 88vw;
         }
-        @media only screen and (min-width: 1024px) {
+        @media (min-width: 1024px) {
             width: 80vw;
         }
-    }
-/* Hiding the other pages */
-    .hidden {
-        display: none;
     }
 
 /* Footer */
@@ -102,7 +87,7 @@ body {
         position: relative;
         bottom: 0;
         width: 100%;
-        padding: 0.5rem 0;
+        padding: 1rem 0;
         color: var(---textColor);
         background-color: var(---colorBgMain);
         text-align: center;

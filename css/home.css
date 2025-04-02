@@ -3,26 +3,29 @@
 /* Aside quote */
 blockquote {
     padding: 0.8rem;
-    margin-top: 10rem;
-    clear: both;
+    margin-top: 0;
     background: var(---colorContrast);
     color: var(---textColor);
     border-radius: 0.5rem;
-    @media only screen and (min-width: 720px) {
-        margin: 0.5rem 0 0 1rem;
-    }
     > p:last-of-type {
-        margin-top: 0.5rem;
-        text-indent: 2rem;
+        margin-top: 0.6rem;
+        font-style: italic;
+        font-size: 14px;
     }
 }
 
-/* Screen size */
-@media only screen and (min-width: 720px) {
+/* Image */
+@media (min-width: 720px) {
     img#home {
         float: right; 
         margin: 0 0 2rem 0.5rem;    
         width: 60%;
         height: 100%;
+    }
+}
+ /* Aside quote  */
+@media (min-width: 480px) {
+    blockquote {
+    margin-top: 6rem;
     }
 }
